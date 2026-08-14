@@ -10,4 +10,8 @@ apps.get('/',userController.getUser);
 
 apps.post('/',userController.createUser);
 
+apps.put('/:username',userController.updateUser);
+
+apps.delete('/:username',userController.deleteUser);
+
 module.exports=apps;
